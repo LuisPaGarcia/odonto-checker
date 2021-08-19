@@ -14,12 +14,6 @@ Now using node v14.17.4 (npm v6.14.14)
 $ npm install
 ```
 
-2. Install all deps.
-
-```sh
-$ npm install
-```
-
 3. Create and fill the `local.config.ts` fine on `./src`.
 
 ```js
