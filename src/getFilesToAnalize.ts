@@ -1,4 +1,4 @@
-function getFilesToAnalize(fileArray) {
+function getFilesToAnalize(fileArray: string[]): string[] {
   const todayMonthNumber = new Date().getDate();
 
   return fileArray.filter((filename) => {
@@ -11,4 +11,4 @@ function getFilesToAnalize(fileArray) {
   });
 }
 
-module.exports = getFilesToAnalize;
+export default getFilesToAnalize;

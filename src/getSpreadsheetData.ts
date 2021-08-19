@@ -1,8 +1,8 @@
-require("./local.config");
-const path = require("path");
-const fs = require("fs");
+import "./local.config";
+import * as path from "path";
+import * as fs from "fs";
 const fsPromises = fs.promises;
-const downloadPath = path.resolve(__dirname, "download");
+const downloadPath = path.resolve(__dirname, "../download");
 // puppeteer-extra is a drop-in replacement for puppeteer,
 // it augments the installed puppeteer with plugin functionality.
 // Any number of plugins can be added through `puppeteer.use()`
@@ -73,4 +73,4 @@ async function getSpreadsheetData() {
   return undefined;
 }
 
-module.exports = getSpreadsheetData;
+export default getSpreadsheetData;

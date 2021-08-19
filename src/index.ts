@@ -1,8 +1,8 @@
-const getSpreadsheetData = require("./getSpreadsheetData");
-const unzip = require("./unzip");
-const getFolderFileNames = require("./getFolderFileNames");
-const getFilesToAnalize = require("./getFilesToAnalize");
-const analyzeFile = require("./analizeFile");
+import getSpreadsheetData from "./getSpreadsheetData";
+import unzip from "./unzip";
+import getFolderFileNames from "./getFolderFileNames";
+import getFilesToAnalize from "./getFilesToAnalize";
+// import analyzeFile from "./analizeFile";
 
 (async function () {
   await getSpreadsheetData();

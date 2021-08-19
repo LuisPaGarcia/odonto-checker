@@ -1,13 +1,13 @@
+import * as fs from "fs";
+import * as path from "path";
 const unzipper = require("unzipper");
-const fs = require("fs");
-const path = require("path");
 const fsPromises = fs.promises;
 
-async function unzip() {
-  const outputPath = path.resolve(__dirname, "output");
+async function unzip(): Promise<unknown> {
+  const outputPath = path.resolve(__dirname, "../output");
   const downloadPath = path.resolve(
     __dirname,
-    "download",
+    "../download",
     "AGENDA AGOSTO 2021.zip"
   );
   console.log("--Unzipping agenda--");
@@ -23,4 +23,4 @@ async function unzip() {
     .pipe(unzipper.Extract({ path: outputPath }));
 }
 
-module.exports = unzip;
+export default unzip;
